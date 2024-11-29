@@ -1,6 +1,6 @@
 from trust_calculator import calculate_trust
 
-# ข้อมูลโค้ช
+# ข้อมูลโค้ช [เข้มงวด, ใจดี, จริงจัง, เฮฮา]
 coaches = {
     'Coach A': {
         'style': [1, 0, 1, 0],  # เข้มงวด, จริงจัง
