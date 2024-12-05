@@ -23,7 +23,7 @@ def calculate_trust(reviews, competition, videos, distance=None):
                 level_weights.get(level, 0) * group_weights.get(group, 1)
                 for level, group in competition
             )
-            competition_weighted = competition_score * 40  # น้ำหนักการแข่งขัน (40%)
+            competition_weighted = competition_score  # น้ำหนักการแข่งขัน (40%)
         else:
             competition_weighted = 0
         

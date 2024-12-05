@@ -3,7 +3,7 @@ from trust_calculator import calculate_trust
 # ข้อมูลโค้ช
 coaches = {
     'Coach A': {
-        'style': [1, 0, 1, 0],  # เข้มงวด, จริงจัง
+        'style': [1, 0, 1, 0],  # เข้มงวด, ใจดี, จริงจัง, เฮฮา
         'trust': calculate_trust(
             reviews=4.5,
             competition=[("จังหวัด", "มืออาชีพ"), ("ภาค", "เยาวชน")],
@@ -33,9 +33,9 @@ coaches = {
         'style': [0, 0, 1, 1],  # จริงจัง, เฮฮา
         'trust': calculate_trust(
             reviews=0,  # ไม่มีรีวิว
-            competition=[],
+            competition=[("ประเทศ", "มืออาชีพ")],
             videos=0,
-            distance=None  # ไม่มีข้อมูลระยะทาง
+            distance=3  # ไม่มีข้อมูลระยะทาง
         )
     }
 }
